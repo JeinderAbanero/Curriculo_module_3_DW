@@ -9,8 +9,8 @@
 /* Estilos generales */
 body {
     line-height: 1.6;
-    color: #c9d1d9; /* Color del texto principal */
-    background-color: #0d1117; /* Fondo oscuro */
+    color: #c9d1d9; 
+    background-color: #0d1117; 
     padding-top: 70px;
 }
 
@@ -19,22 +19,21 @@ header {
     background-color: #161b22; /* Fondo del header */
     color: #c9d1d9;
     padding: 1rem 0;
-    border-bottom: 1px solid #30363d; /* Línea de separación */
-    position: fixed; /* Fijar el header en la parte superior */
-    top: 0;
+    border-bottom: 1px solid #30363d; 
+    position: fixed; 
     left: 0;
     right: 0;
-    width: 100%; /* Asegura que el header ocupe todo el ancho */
-    z-index: 10; /* Para que esté por encima de otros elementos */
+    width: 100%; 
+    z-index: 10; 
 }
 
 /* Ajustes en el contenedor de la navegación */
 header nav {
     display: flex;
-    justify-content: center; /* Centra los elementos de navegación */
-    align-items: center; /* Alineación vertical */
+    justify-content: center; 
+    align-items: center; 
     max-width: 1100px;
-    margin: 0 auto; /* Centra el nav dentro del header */
+    margin: 0 auto; 
     padding: 0 2rem;
 }
 
