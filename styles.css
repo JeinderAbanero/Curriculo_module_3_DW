@@ -1,0 +1,351 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Estilos generales */
+body {
+    line-height: 1.6;
+    color: #c9d1d9; /* Color del texto principal */
+    background-color: #0d1117; /* Fondo oscuro */
+    padding-top: 70px;
+}
+
+/* Encabezado */
+header {
+    background-color: #161b22; /* Fondo del header */
+    color: #c9d1d9;
+    padding: 1rem 0;
+    border-bottom: 1px solid #30363d; /* Línea de separación */
+    position: fixed; /* Fijar el header en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 10; /* Para que esté por encima de otros elementos */
+}
+
+/* Ajustes en el contenedor de la navegación */
+header nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos de navegación */
+    align-items: center; /* Alineación vertical */
+    max-width: 1100px;
+    margin: 0 auto; /* Centra el nav dentro del header */
+    padding: 0 2rem;
+}
+
+/* Estilos de las opciones del menú */
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin-left: 1rem;
+}
+
+header .nav-links a {
+    color: #c9d1d9;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #58a6ff; /* Color del hover */
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #161b22;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+/* Secciones */
+section {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c9d1d9;
+}
+/* Sección Sobre Mí */
+#about {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.about-container:hover {
+    transform: scale(1.02);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#about h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #58a6ff;
+    margin: 0.5rem auto 1rem;
+    border-radius: 2px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#about .highlight-text {
+    font-size: 1.2rem;
+    color: #8b949e;
+    font-style: italic;
+}
+
+.about-image {
+    margin-top: 2rem;
+}
+
+.about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #58a6ff;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+    border-color: #1f6feb;
+}
+
+
+#contact {
+    background-color: #161b22;
+    padding: 2rem;
+    border: 1px solid #30363d; /* Borde gris */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Proyectos */
+#projects {
+    background-color: #161b22;
+    padding: 2rem;
+    border: 1px solid #30363d;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c9d1d9;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #161b22;
+    padding: 1rem;
+    border: 1px solid #30363d;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #c9d1d9;
+}
+
+/* Link a GitHub */
+.github-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+.github-link img {
+    width: 64px;
+    height: 64px;
+    filter: brightness(0) invert(1); 
+    transition: filter 0.3s;
+}
+
+.github-link img:hover {
+    filter: brightness(0) invert(1) saturate(200%);
+}
+
+/* Cursos */
+#courses {
+    background-color: #161b22;
+    padding: 2rem;
+    border: 1px solid #30363d;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background-color: #161b22;
+    padding: 1rem;
+    border: 1px solid #30363d;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #c9d1d9;
+}
+
+.course-card a{
+    text-decoration: none;
+}
+
+/* Habilidades */
+.skills-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+/* Estilo para la sección de redes sociales */
+#social-media {
+    background-color: #161b22;
+    color: #c9d1d9;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+#social-media h2 {
+    font-size: 2rem;
+    color: #58a6ff;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.social-links li {
+    margin-bottom: 0.8rem;
+}
+
+.social-links a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #79c0ff;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #161b22;
+    color: #8b949e;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
